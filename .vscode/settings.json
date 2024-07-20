@@ -1,0 +1,60 @@
+{
+  "files.exclude": {
+    "target": true
+  },
+  "files.watcherExclude": {
+    "target": true
+  },
+  "search.exclude": {
+    "**/target": true
+  },
+  // "explorer.excludeGitIgnore": true,
+  "files.associations": {
+    ".dockerignore": "ignore",
+    ".eslintignore": "ignore",
+    ".vscodeignore": "ignore"
+  },
+  "editor.formatOnSave": true,
+  "trailing-spaces.trimOnSave": false,
+  "editor.codeActionsOnSave": {},
+  "[dotenv]": {
+    "files.insertFinalNewline": false
+  },
+  "cSpell.words": [],
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  // "rust-analyzer.cargo.features": "all",
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.check.extraArgs": [
+    "--locked"
+  ],
+  "rust-analyzer.debug.engine": "ms-vscode.cpptools",
+  "rust-analyzer.debug.engineSettings": {
+    "cppvsdbg": {
+      "sourceFileMap": {
+        // commit-hash from `rustc --version --verbose`
+        "/rustc/f8297e351a40c1439a467bbbb6879088047f50b3": "${env:USERPROFILE}/.rustup/toolchains/1.91.0-x86_64-pc-windows-msvc/lib/rustlib/src/rust"
+      },
+      "symbolOptions": {
+        "searchMicrosoftSymbolServer": true
+      }
+    },
+    "lldb": {
+      "initCommands": [
+        "settings set target.disable-aslr false"
+      ],
+      "sourceLanguages": [
+        "rust"
+      ],
+      "sourceMap": {
+        // commit-hash from `rustc --version --verbose`
+        "/rustc/f8297e351a40c1439a467bbbb6879088047f50b3": "${userHome}/.rustup/toolchains/1.91.0-x86_64-unknown-linux-gnu/lib/rustlib/src/rust"
+      }
+    }
+  }
+}

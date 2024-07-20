@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "(Windows) Launch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/splitter.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "sourceFileMap": {
+        "/rustc/f8297e351a40c1439a467bbbb6879088047f50b3": "${env:USERPROFILE}/.rustup/toolchains/1.91.0-x86_64-pc-windows-msvc/lib/rustlib/src/rust"
+      },
+      "symbolOptions": {
+        "searchMicrosoftSymbolServer": true
+      },
+      "environment": [
+        {
+          "name": "RUST_BACKTRACE",
+          "value": "short"
+        }
+      ]
+    }
+  ]
+}
