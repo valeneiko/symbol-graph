@@ -10,6 +10,8 @@ The idea was to collect which top-level declarations are referencing which symbo
 cargo run --bin splitter /path/to/TypeScript/repo /path/to/out/dir
 ```
 
+<img width="1036" height="512" alt="Demo" src="https://github.com/user-attachments/assets/2e4facbc-54b9-475f-bbd3-6d630982cb14" />
+
 ### Example
 
 Given the following source files:
